@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Directives MUST be above this line */
+
+body {
+  /* Stone-200 text provides a nice warm contrast against the deep green */
+  @apply bg-background text-neutral-200 antialiased selection:bg-primary-500/30 selection:text-white;
+}
+
+/* Scrollbar styling for Forest theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-surfaceHighlight rounded-full border-2 border-background;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-700;
+}
