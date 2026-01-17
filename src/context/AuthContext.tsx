@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
 import { jwtDecode } from "jwt-decode";
-import api from "../api/axios";
+
 
 // 1. Define the shape of our User and Context
 interface User {

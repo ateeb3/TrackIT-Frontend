@@ -3,7 +3,7 @@ import {
   PieChart, Pie, Cell, ResponsiveContainer, Tooltip as RechartsTooltip, Legend 
 } from "recharts";
 import { 
-  Monitor, CheckCircle, AlertTriangle, XCircle, Clock, 
+  Monitor, CheckCircle, AlertTriangle, Clock, 
   Activity, ArrowRight 
 } from "lucide-react";
 import { Link } from "react-router-dom";
