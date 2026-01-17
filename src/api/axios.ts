@@ -2,8 +2,8 @@ import axios from "axios";
 
 // Create the Axios instance
 const api = axios.create({
-  // Make sure this matches your actual backend URL
-  baseURL: "https://localhost:7188/api", 
+  // priority: VITE_API_URL (from Vercel) -> Localhost (fallback)
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5292/api", 
   headers: {
     "Content-Type": "application/json",
   },
